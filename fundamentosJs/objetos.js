@@ -55,3 +55,17 @@ let oboMasViejo = cumpleaños(obo);
 
 console.log(obo);
 console.log(oboMasViejo);
+
+
+//Comparando Objetos;
+
+
+user1 ={
+    nombre: "mengeroshi",
+}
+
+user2 ={
+    nombre: "mengeroshi",
+}
+
+console.log("Comparando dos objetos: ", user1 == user2);    
