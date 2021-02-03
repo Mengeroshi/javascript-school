@@ -68,6 +68,6 @@ let user2 ={
     nombre: "mengeroshi",
 }
 
-console.log("Comparando dos objetos: ", user1 == user2);    
+console.log("Comparando dos objetos: ", user1 === user2);    
 
 
