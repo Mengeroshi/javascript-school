@@ -25,14 +25,14 @@ async function precache (){
     ])
 }
 
-function cachedResponse(request){
+async function cachedResponse(request){
     const cache = await caches.open('v1')
     const response = await cache.match(request);
 
     return response || fetch(request)
 }
 
-function updateCache(request){
+async function updateCache(request){
     const cache = await caches.open('v1')
     const response = await fetch(request);
     return cache.put(request, response)

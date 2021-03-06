@@ -8,16 +8,18 @@
     "platzi"
   ],
   "scripts": {
-    "start": "parcel index.html ejercicios/index.html"
+    "start": "parcel index.html assets/ejercicios/**/*.html  assets/ejercicios/typescript/*.html"
   },
   "browserslist": [
     "last 1 and_chr versions",
     "last 1 chrome versions",
     "last 1 opera versions",
     "last 1 ios_saf versions",
-    "last 1 safari versions"
+    "last 1 safari versions",
+    "last 1 Firefox version"
   ],
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^4.2.3"
   }
 }
