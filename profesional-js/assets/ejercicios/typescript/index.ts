@@ -49,3 +49,61 @@ let comodin:any = "Joker"
 
 let someObject:object = {type:"Wildcard"}
 
+//function
+
+function sumar(a:number, b:number): number{
+    return a + b;
+}
+
+const suma = sumar(4,6);
+
+function createAdder(a:number):(number)=> number{
+    return function(b:number){
+        return b + a;
+    }
+}
+
+const addFour= createAdder(4);
+
+const fourPlus6 = addFour(6);
+
+
+function fullName(firstName:string, lastName:string="Smith" ): string{ 
+    return `${firstName} ${lastName}`;
+}
+
+
+const javier = fullName("Javier", "Saviñon");
+
+console.log(javier)
+
+
+
+
+//interfaces
+
+interface Rectangulo{
+    ancho:number
+    alto:number,
+    color?:Color,
+}
+
+let rect: Rectangulo ={
+    ancho:4,
+    alto: 6,
+    color : Color.Rojo,
+}
+
+function area(r:Rectangulo):number{
+    return r.alto * r.ancho;
+}
+
+
+const areaRect = area(rect)
+
+
+console.log(areaRect);
+
+rect.toString = () => rect.color ? `Un regalo ${rect.color}`: 'Un rectangulo'
+
+console.log(rect.toString())
