@@ -8,7 +8,7 @@
     "platzi"
   ],
   "scripts": {
-    "start": "parcel index.html assets/ejercicios/**/*.html  assets/ejercicios/typescript/*.html"
+    "start": "parcel index.html assets/ejercicios/**/*.html  assets/ejercicios/typescript/*.html  assets/ejercicios/**/*.html"
   },
   "browserslist": [
     "last 1 and_chr versions",
